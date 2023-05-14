@@ -40,7 +40,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colours for <a> elements */
+    color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
@@ -106,7 +106,7 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-/* -------------------------------- Bootstrap Toasts */
+/* ------------------------------- bootstrap toasts */
 
 .message-container {
     position: fixed;
@@ -199,7 +199,7 @@ input[name='q']::placeholder {
     display: none;
 }
 
-.allauth-form-inner-content label::placeholder {
+.allauth-form-inner-content input::placeholder {
     color: #aab7c4;
 }
 
@@ -265,6 +265,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 }
 
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
@@ -280,7 +281,7 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a but when navbar is collapsed on mobile */
+/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
@@ -288,5 +289,41 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    .display-4.logo-font.text-black {
+        font-size: 2rem;
+    }
+
+    .nav-link {
+        padding: 0.15rem;
+    }
+
+    .nav-link i.fa-lg {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        padding: .6rem .6rem;
+        font-size: 1rem;
+    }
+
+    #delivery-banner h4 {
+        font-size: .9rem;
+    }
+
+    .btn.btn-outline-black.rounded-0,
+    .btn.btn-black.rounded-0 {
+        padding: .375rem .375rem;
+    }
+
+    .btn.btn-outline-black.rounded-0.btn-lg,
+    .btn.btn-black.rounded-0.btn-lg {
+        padding: .375rem .375rem;
+        font-size: .75rem;
+    }
+
+    .increment-qty, .decrement-qty {
+        padding: .25rem .5rem !important;
     }
 }
